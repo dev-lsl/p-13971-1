@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function page() {
-    const [posts, setPosts] = useState<{ id: number; title: string }[]>([]);
+    const [posts, setPosts] = useState<{ [key: string]: any }[]>([]);
 
     useEffect(() => {
       setPosts([
